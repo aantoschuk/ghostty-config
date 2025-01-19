@@ -6,9 +6,6 @@ background = #0C1713
 # Text color
 foreground = #E0E0E0
 
-# Pressing Cmd + D opens a new window on the right side.
-keybind = super+d=new_split:right
-
 # Ratio between the foreground and background colors
 # Avoid text that difficult to read
 minimum-contrast = 3
@@ -30,5 +27,13 @@ title="Fun Time"
 # but can be cause of kernel panic due to "out-of"sync".
 window-vsync = true
 
-background-image = "/home/hutir/.config/ghostty/warm-desktop.png"
+# Pressing Cmd + D opens a new window on the right side.
+keybind = super+d=new_split:right
 
+# Move to the left split
+keybind = opt+l=goto_split:left
+# Move to the right split
+keybind = opt+r=goto_split:right
+
+# Fullscreen mode
+keybind = super+f=toggle_fullscreen
